@@ -1,27 +1,39 @@
-# SummerWorkshopAngular
+# DevOps frontend with Angular
+This project is a forntend application developed using the Angular framework for a DevOps pipeline. The application is designed to seamlessly integrate with various DevOps tools to automate processes such as continuous integration, testing, deployment, and monitoring. The key components of this project include Angular, Jenkins, Nexus, Docker, Prometheus, and Grafana
+## Setup
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.2.
+Clone the repository:
+```bash
+git clone https://github.com/OlfaJlali/DevOps_Project_Front
+cd DevOps_Project_Front
+```
+Build the project:
+```bash
+ng serve --open
+```
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Usage
 
-## Code scaffolding
+#### 1- Push changes to the repository to trigger the Jenkins build.
+#### 2- Monitor the build status in Jenkins.
+#### 3-Deploy the application using Docker and Nexus.
+#### 4-Monitor application metrics in Grafana.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Features
+The core of the project is a frontend application developed with angular, providing a scalable and efficient foundation.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Jenkins Integration with Webhook: 
+The application is integrated with Jenkins to automate the continuous integration and deployment processes. Jenkins is configured with a webhook to trigger builds automatically whenever changes are pushed to the repository.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Artifact Repository with Nexus: 
+The project artifacts are stored in Nexus, a repository manager, to facilitate versioning, distribution, and deployment of the application.
 
-## Running end-to-end tests
+### Containerization with Docker: 
+The application is containerized using Docker, providing a consistent and isolated environment for deployment. Docker images are created and stored in Nexus for seamless deployment.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Monitoring with Prometheus and Grafana: 
+The application is monitored using Prometheus for collecting metrics, and Grafana for visualizing these metrics. This ensures real-time visibility into the performance and health of the application.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
